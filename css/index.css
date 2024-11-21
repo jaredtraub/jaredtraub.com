@@ -128,3 +128,15 @@ body, html{
     background-image: linear-gradient(#FAF9F6, lightgray);
     height: 50vh;
 }
+
+.cloud-divider {
+    z-index: 11;
+    width:100vw;
+    height: 100%;
+    top: 30%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+}
