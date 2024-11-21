@@ -15,8 +15,6 @@ body, html{
     overflow: hidden;
   }
 
-
-
   .welcome{
     height: max(100vh, 400px);
     width : 100vw;
@@ -91,21 +89,6 @@ body, html{
   .menu-start:hover #dropdown-menu{
     display: block;
   }
-/*
-.divider-cloud {
-    z-index: 11;
-    position: absolute;
-    top: 50%;
-    pointer-events: none; 
-    width: 100%;
-    overflow: hidden;
-  }
-.divider-cloud img{
-
-    width: 100%;
-}
-    */
-
 
 .cloud {
   position: absolute;
@@ -144,91 +127,4 @@ body, html{
 .space {
     background-image: linear-gradient(#FAF9F6, lightgray);
     height: 50vh;
-}
-
-.question {
-  z-index: 100;
-  background-color: lightgray;
-  overflow: hidden;
-}
-.question h1 {
-
-    font-size: max(60pt, 10vw);
-    transform: scaleY(1.75);
-    line-height: .8em;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.question h2 {
-  font-size: max(15pt, 3vw);
-  transform: scaleY(1.75);
-  line-height: .8em;
-  margin-top: 400px;
-  text-align: center;
-}
-
-.question img   {
-  width: 300px;
-  display: flex;
-  position: absolute;
-  text-align: center;
-  left: 23vw;
-}
-
-.work img {
-  width: 90vw;
-}
-.bike{
-    z-index: 9;
-    position: relative;
-    width: 75vh;
-    height: 75vh;
-}
-#bike-frame{
-  z-index: 102;
-  width: 100%;
-  position: absolute;
-  left: 50%;
-}
-#bike-wheel-front{
-  z-index: 100;
-  width: 57%;
-  position: absolute;
-  left: 112%;
-  bottom: 18%;
-  transform-origin: center;
-}
-#bike-wheel-back{
-  z-index: 100;
-  width: 57%;
-  position: absolute;
-  left: 26%; 
-  bottom: 16%;
-  transform-origin: center;
-}
-@keyframes initialSpin {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes slowDown {
-  from {
-      transform: rotate(360deg); /* Continue from where the initial spin left off */
-  }
-  to {
-      transform: rotate(3600deg); /* 10 additional rotations */
-  }
-}
-
-.spin {
-  animation: initialSpin .6s linear forwards; /* Spin faster initially */
-}
-
-.slow-down {
-  animation: slowDown 10s ease-out forwards; /* Gradually slow down */
 }

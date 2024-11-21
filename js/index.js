@@ -1,3 +1,4 @@
+// Function to detect when user scrolls past welcome screen, attatches header to top of screen
 window.addEventListener('scroll', function() {
   const menu = document.getElementById('menu');
   if (window.scrollY > window.innerHeight * 0.36) {
@@ -10,12 +11,14 @@ window.addEventListener('scroll', function() {
     menu.style.marginTop = '15px'; 
   }
 });
+
+// Function to detect when user scrolls past welcome screen, changes color of header to be more accessible
 window.addEventListener('scroll', function() {
-  //const menu = document.getElementById('menu');
   const menuLinks = document.querySelectorAll('.menu-start a');
   if (window.scrollY > window.innerHeight * 0.9 && this.window.scrollY < this.window.innerHeight * 2.4) {
     menuLinks.forEach(link => {
       link.style.color = '#343A71';
+      link.style.textShadow = 'none';
     });
   } 
   else if (window.scrollY > this.window.innerHeight * 2.4) {
@@ -26,9 +29,12 @@ window.addEventListener('scroll', function() {
   else {
     menuLinks.forEach(link => {
       link.style.color = '#FAF9F6';
+      link.style.textShadow = '2px 2px 4px #000000';
     });
   }
 });
+
+
 
 function moveCloudLeft(cloud, duration) {
   let cloudWidth = cloud.clientWidth / window.innerWidth * 100; // Convert cloud width to percentage of viewport width
